@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap');
+
+:root{
+
+    /*.................PRIMARY COLORS.................*/
+    --beaver: #9e7f66;
+    --codGray: #111111;
+
+    /*.................SECUNDARY COLORS.................*/
+    --mirage: #17192b;
+    --ebonyClay: #242b37;
+    --shuttleGray: #5c6779;
+}
+
+*{
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*.................TYPO & BUTTON SETUP.................*/
+.heading_XL{
+    font-size: clamp(2rem, 5.55vw, 6rem);
+    font-weight: 300;
+    line-height: 5.55vw;
+    letter-spacing: -1;
+}
+
+.heading_L{
+    font-size: clamp(1.5rem, 3.33vw, 3rem);
+    font-weight: 700;
+    line-height: 3.33vw;
+    letter-spacing: -0.5;
+}
+
+.heading_M{
+    font-size: clamp(0.75rem, 1.388vw, 1.5rem);
+    font-weight: 700;
+    line-height: 1.666vw;
+    letter-spacing: -0.25;
+}
+
+.heading_S{
+    font-size: clamp(0.5rem, 1.180vw, 0.75rem);
+    font-weight: 700;
+    line-height: 1.944vw;
+    letter-spacing: -2.5;
+}
+
+.body1{
+    font-size: clamp(0.8rem, 1.388vw, 1.5rem);
+    font-weight: 400;
+    line-height: 2.083vw;
+}
+
+.body2{
+    font-size: 1.11vw;
+    font-weight: 400;
+    line-height: 1.80vw;
+}
+
+.btnDark{
+    width:170px;
+    height:64px;
+    font-size: 17px;
+    font-weight:600;
+    color:#fff;
+    border:1px solid #fff;
+    background: transparent;
+    padding:14px;
+}
+
+.btnDark:hover{
+    width:170px;
+    height:64px;
+    font-size: 17px;
+    font-weight:600;
+    color:var(--codGray);
+    border:1px solid #fff;
+    background: #fff;
+}
+
+.btnDark:disabled{
+    opacity: .25;
+}
+
+.btnLight{
+    width:170px;
+    height:64px;
+    font-size: 17px;
+    font-weight:600;
+    color:var(--codGray);
+    border:1px solid var(--codGray);
+    background: transparent;
+}
+
+.btnLight:hover{
+    width:170px;
+    height:64px;
+    font-size: 17px;
+    font-weight:600;
+    color:transparent;
+    border:1px solid var(--codGray);
+    background: var(--codGray);
+}
+
+.btnLight:disabled{
+    opacity: .25;
+}
+
+
+.hero_section{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../starter-code/images/homepage/hero-bg-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    aspect-ratio: 16/9;
+   
+}
+
+
+.logo{
+    position: relative;
+    left:11.458vw;
+    margin-top: 4.514vw;
+    width: 7.15vw;
+    height: 2.78vw;
+    background-image: url(../starter-code/images/logo.svg);
+    background-size: cover;
+    
+   
+}
+
+.title {
+   
+    position: relative;
+    left: 11.458vw;
+    width:35.20vw;
+    height:25.28vw;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 10.625vw;
+}
+
+.title h1{
+    margin-top: 0px;;
+}
+
+.title>button{
+    margin-top: 30px;
+}
+
+.conteudo{
+    position: relative;
+    top: -3vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.enjoyable_place{ 
+    display: flex;
+    flex-direction: row;
+    margin-top:-25px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.enjoyable_place>img{
+    width:37.5vw;
+    height: 50vw;
+    object-fit: cover;
+    margin-left: 155px;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+   
+}
+
+.card{
+    width: 31vw;
+}
+
+.card1{
+    margin: 11.8vw 8.33vw;
+}
+.divide{
+    margin-bottom: 1.39vw;
+}
+
+.pattern1{
+    position:absolute;
+    top:17.36vw;
+    width:62.15vw;
+}
+
+.pattern2{
+    position: absolute;
+    top: 75.764vw;
+    width: 62.15vw;
+    right:-20px;
+}
+.pattern3{
+    position: absolute;
+    top: 73.12vw;
+    width: 11.12vw;
+    right:3.54vw;
+    z-index: 99;
+}
+.sourced_food{ 
+    position: relative;
+    display: flex; 
+    margin-top:8.40vw;
+    justify-content: right;
+    align-items: center;
+    align-items: right;
+    right:11.46vw;
+
+    
+}
+.sourced_food>img{
+    width:37.5vw;
+    height: 50vw;
+    max-width: 540px;
+    max-height: 720px;
+    object-fit: cover;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+}
+
+.card2{
+    margin-right: 8.33vw;
+}
