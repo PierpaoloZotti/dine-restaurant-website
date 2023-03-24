@@ -8,6 +8,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="../css/style.css">
   <title>Frontend Mentor | Dine Website Challenge</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="/js/app.js"></script>
 </head>
 
 <body>
@@ -80,44 +82,44 @@
         Our menu is revamped every season.
       </p>
     </div>
-      <div class="highlights_menu">
-        <div class="menu_item" id="menu_item">
-          <img src="/starter-code/images/homepage/salmon-desktop-tablet.jpg" alt="salmon menu">
-          <div class="divide1"></div>
-          <div class="menu_card">
-            <p class="heading_M">
-              Seared Salmon Fillet
-            </p>
-            <p class="body2">
-              Our locally sourced salmon served with a refreshing buckwheat summer salad.
-            </p>
-          </div>
+    <div class="highlights_menu">
+      <div class="menu_item" id="menu_item">
+        <img src="/starter-code/images/homepage/salmon-desktop-tablet.jpg" alt="salmon menu">
+        <div class="divide1"></div>
+        <div class="menu_card">
+          <p class="heading_M">
+            Seared Salmon Fillet
+          </p>
+          <p class="body2">
+            Our locally sourced salmon served with a refreshing buckwheat summer salad.
+          </p>
         </div>
-        <div class="menu_item" id="menu_item">
-          <img src="/starter-code/images/homepage/beef-desktop-tablet.jpg" alt="filet mignon menu">
-          <div class="divide1"></div>
-          <div class="menu_card">
-            <p class="heading_M">
-              Rosemary Filet Mignon
-            </p>
-            <p class="body2">
-              Our prime beef served to your taste with a delicious choice of seasonal sides.
-            </p>
-          </div>
+      </div>
+      <div class="menu_item" id="menu_item">
+        <img src="/starter-code/images/homepage/beef-desktop-tablet.jpg" alt="filet mignon menu">
+        <div class="divide1"></div>
+        <div class="menu_card">
+          <p class="heading_M">
+            Rosemary Filet Mignon
+          </p>
+          <p class="body2">
+            Our prime beef served to your taste with a delicious choice of seasonal sides.
+          </p>
         </div>
-        <div class="menu_item" id="menu_item">
-          <img src="/starter-code/images/homepage/chocolate-desktop-tablet.jpg" alt="chocolate mousse">
-          <div class="divide1"></div>
-          <div class="menu_card">
-            <p class="heading_M">
-              Summer Fruit Chocolate Mousse
-            </p>
-            <p class="body2">
-              Creamy mousse combined with summer fruits and dark chocolate shavings.
-            </p>
-          </div>
+      </div>
+      <div class="menu_item" id="menu_item">
+        <img src="/starter-code/images/homepage/chocolate-desktop-tablet.jpg" alt="chocolate mousse">
+        <div class="divide1"></div>
+        <div class="menu_card">
+          <p class="heading_M">
+            Summer Fruit Chocolate Mousse
+          </p>
+          <p class="body2">
+            Creamy mousse combined with summer fruits and dark chocolate shavings.
+          </p>
         </div>
-      </div>   
+      </div>
+    </div>
   </div>
 
   <!--        end highlights from menu section        -->
@@ -125,28 +127,71 @@
   <!--            slider/booking section             -->
 
   <section class="slider">
-    <div class="card_slider slider1">
-      <img src="/starter-code/images/homepage/family-gathering-desktop.jpg" alt="family photo">
-      <div class="selector"></div>
-      <div class="event_description">
-        <div class="event_type">
-          <h2 class="heading_L">
-            Family Gathering
-          </h2>
-          <p class="body1">
-            We love catering for entire families. So please bring everyone along for a special meal with your
-            loved ones. We’ll provide a memorable experience for all.
-          </p>
-        </div>
-        <button class="btnLight">BOOK A TABLE</button>
-        <div class="event_options">
-          <a href="#" class="body1">Family Gathering</a>
-          <a href="#" class="body1">Special Events</a>
-          <a href="#" class="body1">Social Events</a>
+    <div class="container">
+      <div class="card_slider slider1">
+        <img src="/starter-code/images/homepage/family-gathering-desktop.jpg" alt="family photo">
+        <div class="selector"></div>
+        <div class="event_description">
+          <div class="event_type">
+            <h2 class="heading_L">
+              Family Gathering
+            </h2>
+            <p class="body1">
+              We love catering for entire families. So please bring everyone along for a special meal with your
+              loved ones. We’ll provide a memorable experience for all.
+            </p>
+          </div>
+          <button class="btnLight">BOOK A TABLE</button>
+          <div class="event_options">
+            <p class="body1" onClick="showFamily()" id="family">Family Gathering</p>
+            <p class="body1" onClick="showSpecial()">Special Events</p>
+            <p class="body1" onClick="showSocial()">Social Events</p>
+          </div>
         </div>
       </div>
-    </div>  
-    
+      <div class="card_slider slider2">
+        <img src="/starter-code/images/homepage/special-events-desktop.jpg" alt="family photo">
+        <div class="selector2"></div>
+        <div class="event_description">
+          <div class="event_type">
+            <h2 class="heading_L">
+              Special Events
+            </h2>
+            <p class="body1">
+              Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you.
+              We’ll be sure to mark your special date with an unforgettable meal.
+            </p>
+          </div>
+          <button class="btnLight">BOOK A TABLE</button>
+          <div class="event_options">
+            <p class="body1" onClick="showFamily()">Family Gathering</p>
+            <p class="body1" onClick="showSpecial()" id="special">Special Events</p>
+            <p class="body1" onClick="showSocial()">Social Events</p>
+          </div>
+        </div>
+      </div>
+      <div class="card_slider slider3">
+        <img src="/starter-code/images/homepage/social-events-desktop.jpg" alt="family photo">
+        <div class="selector3"></div>
+        <div class="event_description">
+          <div class="event_type">
+            <h2 class="heading_L">
+              Social Events
+            </h2>
+            <p class="body1">
+              Are you looking to have a larger social event? No problem! We’re more than happy to cater for big
+              parties. We’ll work with you to make your event a hit with everyone.
+            </p>
+          </div>
+          <button class="btnLight">BOOK A TABLE</button>
+          <div class="event_options">
+            <p class="body1" onClick="showFamily()">Family Gathering</p>
+            <p class="body1" onClick="showSpecial()">Special Events</p>
+            <p class="body1" onClick="showSocial()" id="social">Social Events</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 
