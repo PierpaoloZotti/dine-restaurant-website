@@ -1,5 +1,8 @@
 const container = document.getElementsByClassName("container");
-
+document.addEventListener("DOMContentLoaded", function(e) {
+    const family = document.getElementById("family");
+    family.style.opacity=1;
+});
 function showSocial(){
     const social = document.getElementById("social");
     container[0].className="container showSocial";
