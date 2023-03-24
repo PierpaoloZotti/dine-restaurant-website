@@ -54,7 +54,7 @@ body{
 }
 
 .body1{
-    font-size: clamp(0.8rem, 1.388vw, 1.5rem);
+    font-size: clamp(0.9rem, 1.388vw, 1.6rem);
     font-weight: 400;
     line-height: 2.083vw;
 }
@@ -66,9 +66,9 @@ body{
 }
 
 .btnDark{
-    width:170px;
-    height:64px;
-    font-size: 17px;
+    width:11.80vw;
+    height:4.45vw;
+    font-size: clamp(0.9rem, 1.388vw, 1.6rem);
     font-weight:600;
     color:#fff;
     border:1px solid #fff;
@@ -77,10 +77,6 @@ body{
 }
 
 .btnDark:hover{
-    width:170px;
-    height:64px;
-    font-size: 17px;
-    font-weight:600;
     color:var(--codGray);
     border:1px solid #fff;
     background: #fff;
@@ -91,9 +87,9 @@ body{
 }
 
 .btnLight{
-    width:170px;
-    height:64px;
-    font-size: 17px;
+    width:11.80vw;
+    height:4.45vw;
+    font-size: clamp(0.9rem, 1.388vw, 1.6rem);
     font-weight:600;
     color:var(--codGray);
     border:1px solid var(--codGray);
@@ -101,11 +97,7 @@ body{
 }
 
 .btnLight:hover{
-    width:170px;
-    height:64px;
-    font-size: 17px;
-    font-weight:600;
-    color:transparent;
+    color:#fff;
     border:1px solid var(--codGray);
     background: var(--codGray);
 }
@@ -236,6 +228,78 @@ body{
     box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
 }
 
-.card2{
+.card2, .card3{
     margin-right: 8.33vw;
+}
+
+.card3{
+    margin-top: 2vw;
+    color:#fff;
+}
+.highlights{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    background: var(--codGray);
+    padding: 13.88vw 11.46vw 8.33vw;
+    
+}
+
+.menu_item{
+    display: flex;
+    color:#fff;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--beaver);
+}
+
+.menu_item:last-child{
+    border: none;
+}
+.menu_item>img{
+    width:8.89vw;
+}
+.divide1{
+    width: 32px;
+    height:1px;
+    background: var(--beaver);
+    margin-right: 30px;
+    margin-top:18px;
+}
+
+.menu_card{
+    width:24.3vw;
+    margin-top:10px;
+    padding: 0;
+}
+
+.slider{
+    padding: 11.11vw 11.458vw;
+    
+}
+
+.card_slider{
+    display: flex;;
+}
+.card_slider>img{
+    width:37.5vw;
+    height: 50vw;
+    object-fit: cover;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);  
+}
+
+.event_options{
+    display: flex;
+    flex-direction: column;
+}
+
+.event_options>a{
+    text-decoration: none;
+    color:var(--codGray)
+}
+
+.selector{
+    width:95px;
+    height:1px;
+    background:var(--beaver);
+    margin-right: 32px;
 }
