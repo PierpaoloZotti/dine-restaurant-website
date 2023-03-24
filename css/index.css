@@ -1,0 +1,297 @@
+@import url('../css/style.css');
+
+
+
+.hero_section{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../starter-code/images/homepage/hero-bg-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    aspect-ratio: 16/9;
+   
+}
+
+
+.logo{
+    position: relative;
+    left:11.458vw;
+    margin-top: 4.514vw;
+    width: 7.15vw;
+    height: 2.78vw;
+    background-image: url(../starter-code/images/logo.svg);
+    background-size: cover;
+    
+   
+}
+
+.title {
+   
+    position: relative;
+    left: 11.458vw;
+    width:35.20vw;
+    height:25.28vw;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 10.625vw;
+}
+
+.title h1{
+    margin-top: 0px;;
+}
+
+.title>button{
+    margin-top: 30px;
+}
+
+.conteudo{
+    position: relative;
+    top: -3vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.enjoyable_place{ 
+    display: flex;
+    flex-direction: row;
+    margin-top:-25px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.enjoyable_place>img{
+    width:37.5vw;
+    height: 50vw;
+    object-fit: cover;
+    margin-left: 155px;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+   
+}
+
+.card{
+    width: 31vw;
+}
+
+.card1{
+    margin: 11.8vw 8.33vw;
+}
+.divide{
+    margin-bottom: 1.39vw;
+}
+
+.pattern1{
+    position:absolute;
+    top:17.36vw;
+    width:62.15vw;
+}
+
+.pattern2{
+    position: absolute;
+    top: 75.764vw;
+    width: 62.15vw;
+    right:-20px;
+}
+.pattern3{
+    position: absolute;
+    top: 73.12vw;
+    width: 11.12vw;
+    right:3.54vw;
+    z-index: 99;
+}
+.sourced_food{ 
+    position: relative;
+    display: flex; 
+    margin-top:8.40vw;
+    justify-content: right;
+    align-items: center;
+    align-items: right;
+    right:11.46vw;
+
+    
+}
+.sourced_food>img{
+    width:37.5vw;
+    height: 50vw;
+    max-width: 540px;
+    max-height: 720px;
+    object-fit: cover;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+}
+
+.card2, .card3{
+    margin-right: 8.33vw;
+}
+
+.card3{
+    margin-top: 2vw;
+    color:#fff;
+}
+.highlights{
+    margin-top: -6.77vw;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    background: var(--codGray);
+    padding: 13.88vw 11.46vw 8.33vw;
+    
+}
+
+.menu_item{
+    display: flex;
+    color:#fff;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--beaver);
+}
+
+.menu_item:last-child{
+    border: none;
+}
+.menu_item>img{
+    width:8.89vw;
+}
+.divide1{
+    width: 32px;
+    height:1px;
+    background: var(--beaver);
+    margin-right: 30px;
+    margin-top:18px;
+}
+
+.menu_card{
+    width:24.3vw;
+    margin-top:10px;
+    padding: 0;
+}
+
+.slider{
+    padding: 11.11vw 11.458vw;
+    
+  
+}
+.container{
+    display: flex;
+    gap:22.9vw;
+    transition: 0.8s ease-in;
+}
+
+.showSpecial{
+    transform: translateX(-100vw);
+    transition: 0.8s ease-in;
+}
+.showSocial{
+    transform: translateX(-200vw);
+    transition: 0.8s ease-in;
+}
+.showFamily{
+    transform: translateX(0);
+    transition: 0.8s ease-in;
+}
+
+.card_slider{
+    display: flex;
+   
+}
+.card_slider>img{
+    width:37.5vw;
+    height: 50vw;
+    object-fit: cover;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);  
+}
+.event_description{
+    min-width: 31vw;
+}
+.event_type{
+    margin-bottom: 4.17vw;
+}
+.event_options{
+    margin-top: 5.50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.event_options>p{
+    cursor: pointer;
+    color:var(--codGray);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    opacity: .7;
+}
+
+.event_options>p:hover{
+    opacity: 1;
+}
+
+
+.selector, .selector2, .selector3{
+    
+    width:95px;
+    height:1px;
+    background:var(--beaver);
+    margin-right: 32px;
+}
+
+.selector{
+    margin-top: 24.50vw;
+}
+.selector2{
+    margin-top: 27.50vw;
+}
+.selector3{
+    margin-top: 30.50vw;
+}
+
+.reservation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6.87vw 11.45vw;
+    background-image: url("/starter-code/images/homepage/ready-bg-desktop.jpg");
+    width:100%;
+
+}
+
+.reservation>h2 {
+    color:#fff;
+}
+
+.footer{
+    padding: 5.80vw 11.45vw;
+    background: var(--codGray);
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.footer_container>img{
+    width: 7.22vw;
+    height:2.78vw;
+}
+.address{
+    font-style: normal;
+}
+.pattern4, .pattern5{
+    position: absolute;
+    display: inline;
+
+}
+.pattern4{
+    left:-35%;
+    z-index: -1;
+    width: 62.152vw;
+}
+.pattern5{
+    position: relative;
+    top:14.48vw;
+    left:8.68vw;
+    z-index: 3;
+    width: 11.11vw;
+    
+   
+}
