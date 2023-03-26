@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/css/booking.css">
   <title>Frontend Mentor | Dine Website Challenge</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="/js/app.js"></script>
 </head>
-<body>
 
+<body>
+  <section class="hero_container">
+    <img src="/starter-code/images/logo.svg" alt="logo" class="logo">
+    <div class="title">
+      <h1 class="headingXL">
+        Reservations
+      </h1>
+      <p class="body1">
+        We can’t wait to host you. If you have any special requirements please feel free to
+        call on the phone number below. We’ll be happy to accommodate you.
+      </p>
+    </div>
+  </section>
+  <div>
+    <img src="/starter-code/images/patterns/pattern-curve-bottom-right.svg" alt="pattern de fundo"
+      class="pattern_booking1">
+    <img src="/starter-code/images/patterns/pattern-lines.svg" alt="pattern de fundo" class="pattern_booking2">
+  </div>
+  <form action="post" class="form_container">
+    <div class="personal_data">
+      <input type="text" name="name" id="name" class="body1" onClick="labelAnimation({name})" required>
+      <label id="name_label" for="name" class="">Name</label>
+      <input type="email" name="email" id="email" class="body1" data-option required>
+      <label id="email_label" for="email">Email</label>
+    </div>
+  </form>
+  <footer class="footer">
+    <div class="footer_container">
+      <img src="/starter-code/images/logo.svg" alt="logo">
+      <address class="address">
+        <p class="bodySmall">Marthwaite, Sedberg h</p>
+        <p class="bodySmall">Cumbria</p>
+        <p class="bodySmall">+00 44 123 4567</p>
+      </address>
+      <div class="opening">
+        <p class="bodySmall">OPEN TIMES</p>
+        <p class="bodySmall">MON - FRI: 09:00 AM - 10:00 PM</p>
+        <p class="bodySmall">SAT - SUN: 09:00 AM - 11:30 PM</p>
+      </div>
+    </div>
+  </footer>
   Reservations
 
-  We can’t wait to host you. If you have any special requirements please feel free to 
+  We can’t wait to host you. If you have any special requirements please feel free to
   call on the phone number below. We’ll be happy to accommodate you.
 
 
@@ -26,13 +69,7 @@
 
 
 
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
 
 </body>
+
 </html>
